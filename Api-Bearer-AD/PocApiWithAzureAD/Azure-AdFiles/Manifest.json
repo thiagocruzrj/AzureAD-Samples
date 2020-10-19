@@ -1,0 +1,66 @@
+{
+	"id": "d8ec02a4-7634-4c30-8019-5e9ee181d1e7",
+	"acceptMappedClaims": null,
+	"accessTokenAcceptedVersion": null,
+	"addIns": [],
+	"allowPublicClient": null,
+	"appId": "11668098-d932-49a5-a307-25c64e27c8a9",
+	"appRoles": [ 
+    { 
+        "allowedMemberTypes": [ "Application" ], 
+        "description": "Daemon apps in this role can consume the web api.",
+        "displayName": "DaemonAppRole",
+        "id": "6543b78e-0f43-4fe9-bf84-0ce8b74c06a3",
+        "isEnabled": true,
+        "lang": null,
+        "origin": "Application",
+        "value": "DaemonAppRole"
+    }],
+	"oauth2AllowUrlPathMatching": false,
+	"createdDateTime": "2020-10-19T15:59:28Z",
+	"groupMembershipClaims": null,
+	"identifierUris": [
+		"api://11668098-d932-49a5-a307-25c64e27c8a9"
+	],
+	"informationalUrls": {
+		"termsOfService": null,
+		"support": null,
+		"privacy": null,
+		"marketing": null
+	},
+	"keyCredentials": [],
+	"knownClientApplications": [],
+	"logoUrl": null,
+	"logoutUrl": null,
+	"name": "WeatherApi_Development",
+	"oauth2AllowIdTokenImplicitFlow": false,
+	"oauth2AllowImplicitFlow": false,
+	"oauth2Permissions": [],
+	"oauth2RequirePostResponse": false,
+	"optionalClaims": null,
+	"orgRestrictions": [],
+	"parentalControlSettings": {
+		"countriesBlockedForMinors": [],
+		"legalAgeGroupRule": "Allow"
+	},
+	"passwordCredentials": [],
+	"preAuthorizedApplications": [],
+	"publisherDomain": "",
+	"replyUrlsWithType": [],
+	"requiredResourceAccess": [
+		{
+			"resourceAppId": "00000003-0000-0000-c000-000000000000",
+			"resourceAccess": [
+				{
+					"id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+					"type": "Scope"
+				}
+			]
+		}
+	],
+	"samlMetadataUrl": null,
+	"signInUrl": null,
+	"signInAudience": "AzureADMyOrg",
+	"tags": [],
+	"tokenEncryptionKeyId": null
+}
