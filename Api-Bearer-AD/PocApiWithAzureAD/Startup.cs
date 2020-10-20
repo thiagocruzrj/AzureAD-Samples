@@ -25,6 +25,11 @@ namespace PocApiWithAzureAD
                     o.Audience = Configuration["AAD:ResourseId"];
                     o.Authority = $"{Configuration["AAD:InstanceId"]}{Configuration["AAD:TenentId"]}";
                 });
+
+            services.AddAuthorization(o =>
+                o.AddPolicy("GetWeatherPolicy", config => 
+                config.RequireClaim("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/authorizationdecision", new[] { " Get_Weather " })));
+
             services.AddControllers();
         }
 
