@@ -7,7 +7,6 @@ using Microsoft.Extensions.Logging;
 
 namespace PocApiWithAzureAD.Controllers
 {
-    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
@@ -25,7 +24,7 @@ namespace PocApiWithAzureAD.Controllers
         }
 
         [HttpGet]
-        [Authorize("GetWeatherPolicy")]
+        [Authorize]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
